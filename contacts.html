@@ -29,6 +29,11 @@
 			<div class="main__wrap">
 				<div class="main__left main__left--fixed">
 					<div class="main__top">
+						<button class="hamburger" id="hamburger-toggle" aria-label="Меню">
+							<span class="hamburger__inner"></span>
+							<span class="hamburger__inner"></span>
+							<span class="hamburger__inner"></span>
+						</button>
 						<a href="index.html" class="main__logotype">
 							<img src="img/logotype.svg" width="136" height="42" alt="MOSCOWEB">
 						</a>
@@ -37,7 +42,7 @@
 						<nav class="nav main__nav">
 							<ul class="nav__list">
 								<li class="nav__item">
-									<a href="projects.html" class="nav__link">Услуги</a>
+									<a href="services.html" class="nav__link">Услуги</a>
 								</li>
 								<li class="nav__item">
 									<a href="contacts.html" class="nav__link">Контакты</a>
@@ -53,141 +58,158 @@
 				</div>
 				<div class="main__center">
 					<div class="contacts">
-						<div class="contacts__wrapper">
-							<div class="contacts__left">
-								<div class="contacts__top">
-									<h1 class="contacts__heading">
-										Привет,<br>
-										давайте <br>
-										знакомиться
-									</h1>
-									<picture class="contacts__img">
-										<img src="img/contacts-img.jpg" alt="Image">
-									</picture>
+						<div class="contacts__wrap">
+							<div class="contacts__wrapper">
+								<div class="contacts__left">
+									<div class="contacts__top">
+										<h1 class="contacts__heading">
+											Привет,<br>
+											давайте <br>
+											знакомиться
+										</h1>
+										<picture class="contacts__img">
+											<img src="img/contacts-img.jpg" alt="Image">
+										</picture>
+									</div>
+								</div>
+								<div class="contacts__right">
+									<form action="#" class="contacts-form contacts__form">
+										<div class="contacts-form__inner">
+											<div class="input-field contacts-form__input">
+												<div class="input-field__inner">
+													<input type="text" class="input-field__input" placeholder="Ваше имя?">
+												</div>
+											</div>
+										</div>
+										<div class="contacts-form__inner">
+											<div class="input-field contacts-form__input">
+												<div class="input-field__inner">
+													<input type="text" class="input-field__input" placeholder="+7 (___) ___-__-__" data-inputmask="'mask': '+7 (999) 999-99-99'">
+												</div>
+											</div>
+											<div class="input-field contacts-form__input">
+												<div class="input-field__inner">
+													<input type="text" class="input-field__input" placeholder="@username" data-inputmask="'mask': '@*{1,}'">
+												</div>
+											</div>
+										</div>
+										<div class="contacts-form__radios">
+											<div class="btn-checkbox contacts-form__radio">
+												<input type="radio" class="btn-checkbox__input" id="contacts-budget-01" name="BUDGET" checked>
+												<label for="contacts-budget-01" class="btn-checkbox__group">
+													<span class="btn-checkbox__title">200 тыс - 1 млн</span>
+												</label>
+											</div>
+											<div class="btn-checkbox contacts-form__radio">
+												<input type="radio" class="btn-checkbox__input" id="contacts-budget-02" name="BUDGET">
+												<label for="contacts-budget-02" class="btn-checkbox__group">
+													<span class="btn-checkbox__title">1-2 млн</span>
+												</label>
+											</div>
+											<div class="btn-checkbox contacts-form__radio">
+												<input type="radio" class="btn-checkbox__input" id="contacts-budget-03" name="BUDGET">
+												<label for="contacts-budget-03" class="btn-checkbox__group">
+													<span class="btn-checkbox__title">> 3.000.000 млн</span>
+												</label>
+											</div>
+										</div>
+										<div class="contacts-form__comments">
+											<span class="contacts-form__subtitle">Комментарий</span>
+											<div class="contacts-form__checkboxes">
+												<div class="btn-sm-checkbox contacts-form__checkbox">
+													<input type="radio" class="btn-sm-checkbox__input" id="contacts-comments-01" name="COMMENTS">
+													<label for="contacts-comments-01" class="btn-sm-checkbox__group">
+														<span class="btn-sm-checkbox__title">Сайт</span>
+													</label>
+												</div>
+												<div class="btn-sm-checkbox contacts-form__checkbox">
+													<input type="radio" class="btn-sm-checkbox__input" id="contacts-comments-02" name="COMMENTS">
+													<label for="contacts-comments-02" class="btn-sm-checkbox__group">
+														<span class="btn-sm-checkbox__title">Сервис</span>
+													</label>
+												</div>
+												<div class="btn-sm-checkbox contacts-form__checkbox">
+													<input type="radio" class="btn-sm-checkbox__input" id="contacts-comments-03" name="COMMENTS">
+													<label for="contacts-comments-03" class="btn-sm-checkbox__group">
+														<span class="btn-sm-checkbox__title">Приложение</span>
+													</label>
+												</div>
+												<div class="btn-sm-checkbox contacts-form__checkbox">
+													<input type="radio" class="btn-sm-checkbox__input" id="contacts-comments-04" name="COMMENTS">
+													<label for="contacts-comments-04" class="btn-sm-checkbox__group">
+														<span class="btn-sm-checkbox__title">Fast-брендинг</span>
+													</label>
+												</div>
+												<div class="btn-sm-checkbox contacts-form__checkbox">
+													<input type="radio" class="btn-sm-checkbox__input" id="contacts-comments-05" name="COMMENTS">
+													<label for="contacts-comments-05" class="btn-sm-checkbox__group">
+														<span class="btn-sm-checkbox__title">Логотип / айдентика</span>
+													</label>
+												</div>
+												<div class="btn-sm-checkbox contacts-form__checkbox">
+													<input type="radio" class="btn-sm-checkbox__input" id="contacts-comments-06" name="COMMENTS">
+													<label for="contacts-comments-06" class="btn-sm-checkbox__group">
+														<span class="btn-sm-checkbox__title">Стратегия</span>
+													</label>
+												</div>
+												<div class="btn-sm-checkbox contacts-form__checkbox">
+													<input type="radio" class="btn-sm-checkbox__input" id="contacts-comments-07" name="COMMENTS">
+													<label for="contacts-comments-07" class="btn-sm-checkbox__group">
+														<span class="btn-sm-checkbox__title">Аналитика</span>
+													</label>
+												</div>
+												<div class="btn-sm-checkbox contacts-form__checkbox">
+													<input type="radio" class="btn-sm-checkbox__input" id="contacts-comments-08" name="COMMENTS">
+													<label for="contacts-comments-08" class="btn-sm-checkbox__group">
+														<span class="btn-sm-checkbox__title">Аудит</span>
+													</label>
+												</div>
+												<div class="btn-sm-checkbox contacts-form__checkbox">
+													<input type="radio" class="btn-sm-checkbox__input" id="contacts-comments-09" name="COMMENTS">
+													<label for="contacts-comments-09" class="btn-sm-checkbox__group">
+														<span class="btn-sm-checkbox__title">Поддержка IT/Дизайн</span>
+													</label>
+												</div>
+												<div class="btn-sm-checkbox contacts-form__checkbox">
+													<input type="radio" class="btn-sm-checkbox__input" id="contacts-comments-10" name="COMMENTS">
+													<label for="contacts-comments-10" class="btn-sm-checkbox__group">
+														<span class="btn-sm-checkbox__title">Дизайн среды</span>
+													</label>
+												</div>
+												<div class="btn-sm-checkbox contacts-form__checkbox">
+													<input type="radio" class="btn-sm-checkbox__input" id="contacts-comments-11" name="COMMENTS">
+													<label for="contacts-comments-11" class="btn-sm-checkbox__group">
+														<span class="btn-sm-checkbox__title">Web 3.0</span>
+													</label>
+												</div>
+												<div class="btn-sm-checkbox contacts-form__checkbox">
+													<input type="radio" class="btn-sm-checkbox__input" id="contacts-comments-12" name="COMMENTS">
+													<label for="contacts-comments-12" class="btn-sm-checkbox__group">
+														<span class="btn-sm-checkbox__title">Другое</span>
+													</label>
+												</div>
+											</div>
+										</div>
+										<button class="contacts-form__btn">
+											<span>Заполните форму, чтобы отправить</span>
+										</button>
+									</form>
 								</div>
 							</div>
-							<div class="contacts__right">
-								<form action="#" class="contacts-form contacts__form">
-									<div class="contacts-form__inner">
-										<div class="input-field contacts-form__input">
-											<div class="input-field__inner">
-												<input type="text" class="input-field__input" placeholder="Ваше имя?">
-											</div>
-										</div>
-									</div>
-									<div class="contacts-form__inner">
-										<div class="input-field contacts-form__input">
-											<div class="input-field__inner">
-												<input type="text" class="input-field__input" placeholder="+7 (___) -___ -__-__" data-inputmask="'mask': '+7 (999) 999-99-99'">
-											</div>
-										</div>
-										<div class="input-field contacts-form__input">
-											<div class="input-field__inner">
-												<input type="text" class="input-field__input" placeholder="@username" data-inputmask="'mask': '@*{1,}'">
-											</div>
-										</div>
-									</div>
-									<div class="contacts-form__radios">
-										<div class="btn-checkbox contacts-form__radio">
-											<input type="radio" class="btn-checkbox__input" id="contacts-budget-01" name="BUDGET" checked>
-											<label for="contacts-budget-01" class="btn-checkbox__group">
-												<span class="btn-checkbox__title">200 тыс - 1 млн</span>
-											</label>
-										</div>
-										<div class="btn-checkbox contacts-form__radio">
-											<input type="radio" class="btn-checkbox__input" id="contacts-budget-02" name="BUDGET">
-											<label for="contacts-budget-02" class="btn-checkbox__group">
-												<span class="btn-checkbox__title">1-2 млн</span>
-											</label>
-										</div>
-										<div class="btn-checkbox contacts-form__radio">
-											<input type="radio" class="btn-checkbox__input" id="contacts-budget-03" name="BUDGET">
-											<label for="contacts-budget-03" class="btn-checkbox__group">
-												<span class="btn-checkbox__title">> 3.000.000 млн</span>
-											</label>
-										</div>
-									</div>
-									<div class="contacts-form__comments">
-										<span class="contacts-form__subtitle">Комментарий</span>
-										<div class="contacts-form__checkboxes">
-											<div class="btn-sm-checkbox contacts-form__checkbox">
-												<input type="radio" class="btn-sm-checkbox__input" id="contacts-comments-01" name="COMMENTS">
-												<label for="contacts-comments-01" class="btn-sm-checkbox__group">
-													<span class="btn-sm-checkbox__title">Сайт</span>
-												</label>
-											</div>
-											<div class="btn-sm-checkbox contacts-form__checkbox">
-												<input type="radio" class="btn-sm-checkbox__input" id="contacts-comments-02" name="COMMENTS">
-												<label for="contacts-comments-02" class="btn-sm-checkbox__group">
-													<span class="btn-sm-checkbox__title">Сервис</span>
-												</label>
-											</div>
-											<div class="btn-sm-checkbox contacts-form__checkbox">
-												<input type="radio" class="btn-sm-checkbox__input" id="contacts-comments-03" name="COMMENTS">
-												<label for="contacts-comments-03" class="btn-sm-checkbox__group">
-													<span class="btn-sm-checkbox__title">Приложение</span>
-												</label>
-											</div>
-											<div class="btn-sm-checkbox contacts-form__checkbox">
-												<input type="radio" class="btn-sm-checkbox__input" id="contacts-comments-04" name="COMMENTS">
-												<label for="contacts-comments-04" class="btn-sm-checkbox__group">
-													<span class="btn-sm-checkbox__title">Fast-брендинг</span>
-												</label>
-											</div>
-											<div class="btn-sm-checkbox contacts-form__checkbox">
-												<input type="radio" class="btn-sm-checkbox__input" id="contacts-comments-05" name="COMMENTS">
-												<label for="contacts-comments-05" class="btn-sm-checkbox__group">
-													<span class="btn-sm-checkbox__title">Логотип / айдентика</span>
-												</label>
-											</div>
-											<div class="btn-sm-checkbox contacts-form__checkbox">
-												<input type="radio" class="btn-sm-checkbox__input" id="contacts-comments-06" name="COMMENTS">
-												<label for="contacts-comments-06" class="btn-sm-checkbox__group">
-													<span class="btn-sm-checkbox__title">Стратегия</span>
-												</label>
-											</div>
-											<div class="btn-sm-checkbox contacts-form__checkbox">
-												<input type="radio" class="btn-sm-checkbox__input" id="contacts-comments-07" name="COMMENTS">
-												<label for="contacts-comments-07" class="btn-sm-checkbox__group">
-													<span class="btn-sm-checkbox__title">Аналитика</span>
-												</label>
-											</div>
-											<div class="btn-sm-checkbox contacts-form__checkbox">
-												<input type="radio" class="btn-sm-checkbox__input" id="contacts-comments-08" name="COMMENTS">
-												<label for="contacts-comments-08" class="btn-sm-checkbox__group">
-													<span class="btn-sm-checkbox__title">Аудит</span>
-												</label>
-											</div>
-											<div class="btn-sm-checkbox contacts-form__checkbox">
-												<input type="radio" class="btn-sm-checkbox__input" id="contacts-comments-09" name="COMMENTS">
-												<label for="contacts-comments-09" class="btn-sm-checkbox__group">
-													<span class="btn-sm-checkbox__title">Поддержка IT/Дизайн</span>
-												</label>
-											</div>
-											<div class="btn-sm-checkbox contacts-form__checkbox">
-												<input type="radio" class="btn-sm-checkbox__input" id="contacts-comments-10" name="COMMENTS">
-												<label for="contacts-comments-10" class="btn-sm-checkbox__group">
-													<span class="btn-sm-checkbox__title">Дизайн среды</span>
-												</label>
-											</div>
-											<div class="btn-sm-checkbox contacts-form__checkbox">
-												<input type="radio" class="btn-sm-checkbox__input" id="contacts-comments-11" name="COMMENTS">
-												<label for="contacts-comments-11" class="btn-sm-checkbox__group">
-													<span class="btn-sm-checkbox__title">Web 3.0</span>
-												</label>
-											</div>
-											<div class="btn-sm-checkbox contacts-form__checkbox">
-												<input type="radio" class="btn-sm-checkbox__input" id="contacts-comments-12" name="COMMENTS">
-												<label for="contacts-comments-12" class="btn-sm-checkbox__group">
-													<span class="btn-sm-checkbox__title">Другое</span>
-												</label>
-											</div>
-										</div>
-									</div>
-									<button class="contacts-form__btn">
-										<span>Заполните форму, чтобы отправить</span>
-									</button>
-								</form>
+							<div class="contacts__bottom">
+								<div class="contacts-nav contacts__nav">
+									<ul class="contacts-nav__list">
+										<li class="contacts-nav__item">
+											<a href="#" class="contacts-nav__link">Телеграм: @moscoweb</a>
+										</li>
+										<li class="contacts-nav__item">
+											<a href="#" class="contacts-nav__link">ЛинкедИн: @moscoweb </a>
+										</li>
+										<li class="contacts-nav__item">
+											<a href="mailto:sale@moscoweb.agency" class="contacts-nav__link">sale@moscoweb.agency</a>
+										</li>
+									</ul>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -196,6 +218,42 @@
 		</div>
 	</div>
 	<!-- end of main -->
+	<!-- menu -->
+	<div class="menu scroll-fixed" id="menu">
+		<div class="menu__wrap">
+			<div class="menu__top">
+				<div class="menu__language">En</div>
+				<button class="menu__close" id="menu-close" aria-label="Закрыть">
+					<svg>
+						<use xlink:href="img/sprite.svg#icon-close"></use>
+					</svg>
+				</button>
+			</div>
+			<div class="menu__main">
+				<nav class="nav menu__nav">
+					<ul class="nav__list">
+						<li class="nav__item">
+							<a href="services.html" class="nav__link">Услуги</a>
+						</li>
+						<li class="nav__item">
+							<a href="contacts.html" class="nav__link">Контакты</a>
+						</li>
+						<li class="nav__item">
+							<a href="about.html" class="nav__link">О нас</a>
+						</li>
+						<li class="nav__item">
+							<a href="#" class="nav__link nav__link--accent">Заказать</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+			<div class="menu__bottom">
+				<p class="menu__copyright">Moscoweb 2017—2025 <img src="img/icon-c.svg" alt="Icon"></p>
+				<p class="menu__copyright"><a href="#">Куки</a> & <a href="#">Политика</a></p>
+			</div>
+		</div>
+	</div>
+	<!-- end of menu -->
 	<!-- scripts -->
 	<script src="js/vendor.min.js"></script>
 	<script src="js/app.min.js"></script>
